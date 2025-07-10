@@ -1,18 +1,19 @@
 <script setup lang="ts">
+import SimpleWrapper from './SimpleWrapper.vue';
 defineProps<{
-  msg: string
-}>()
+  msg: string;
+}>();
 </script>
 
 <template>
-  <div class="greetings">
+  <SimpleWrapper class="greetings" v-if="msg !== ''">
     <h1 class="green">{{ msg }}</h1>
     <h3>
       You’ve successfully created a project with
       <a href="https://vite.dev/" target="_blank" rel="noopener">Vite</a> +
       <a href="https://vuejs.org/" target="_blank" rel="noopener">Vue 3</a>.
     </h3>
-  </div>
+  </SimpleWrapper>
 </template>
 
 <style scoped>

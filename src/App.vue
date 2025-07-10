@@ -1,10 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue';
 import TheWelcome from './components/TheWelcome.vue';
-
-const handleHelloWorldClick = () => {
-  console.log('HelloWorld component clicked!');
-};
 </script>
 
 <template>
@@ -18,7 +14,7 @@ const handleHelloWorldClick = () => {
     />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" @click="handleHelloWorldClick" />
+      <HelloWorld msg="You did it!" />
     </div>
   </header>
 
